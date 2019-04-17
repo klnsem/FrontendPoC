@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">FrontendPoC</string>
+    <string name="hello_world_from_activity_main_xml">Hello World! From activity_main.xml</string>
+</resources>
