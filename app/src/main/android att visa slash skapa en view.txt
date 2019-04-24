@@ -1,0 +1,9 @@
+Vad som gjorts:
+
+skapat en ny klass (ViewNumberTwo.java), som ligger under katalogen/paketet ...DoStuff. Denna har en layout i activity_two.xml, och är deklarerad i AndroidManifest.xml. Det är en standard-klass i övrigt, och gör ta-mig-tusen ingenting. 
+
+I MainActivity så hoppar  man till nya viewen via metoden doActivity, som innehåller ett Intent-objekt - som iofs. är tomt mer eller mindre - som verkar behövas. I Intent deklareras hursom vart vi ska (ViewNumberTwo.class). Om man vill skicka med saker till den nya viewen så görs det i Intent-objektet (eller så sköts det mer i bakgrunden men ja, det kommer senare). 
+
+Bakåt-knappen uppe i vänstra hörnet läggs till genom att addera vad dev.google.com kallar logical parent; detta sker i AndroidManifest.xml under   <activity android:name=".DoStuff.ViewNumberTwo" vilket atm. är rad 20 och nedåt. 
+
+Problem/fel/saker jag inte brytt mig om: informationen sparas inte i MainActivity, vilket gör att TextView:en som efter man tryckt på Button lyder "butts", lyder efter att man använt bakåt-knappen uppe till vänster TextView. 
